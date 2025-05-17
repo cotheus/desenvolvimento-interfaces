@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Aula 7</title>
+
+    </head>
+
+    <body>
+
+        <div>
+
+            <form>
+                <h2>Formulário</h2> <br> <br>
+
+                <!-- Texto -->
+                <label>Nome: <input type="text" name="nome"></label> <br> <br>
+                
+                <!-- Email -->
+                <label>Email: <input type="email" name="email"></label> <br> <br>
+                
+                <!-- Senha -->
+                <label>Senha: <input type="password" name="senha"></label> <br> <br>
+                
+                <!-- Número -->
+                <label>Idade: <input type="number" name="idade"></label> <br> <br>
+                
+                <!-- Data -->
+                <label>Data de Nascimento: <input type="date" name="nascimento"></label> <br> <br>
+                
+                <!-- Checkbox -->
+                <label><input type="checkbox" name="termos"> Aceito os termos</label> <br>
+                
+                <!-- Radio -->
+                <p>Gênero</p>
+                <label><input type="radio" name="genero"> Masculino</label> <br>
+                <label><input type="radio" name="genero"> Feminino</label> <br> <br>
+
+                <!-- Tag de seleção -->
+                <label for="curso">Escolha um estado:</label>
+                <select name="estado" id="estado">
+                    <option value="" selected disabled>Selecione um estado</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                </select> <br> <br>
+
+                <label for="curso">Escolha um curso:</label>
+                <select name="curso" id="curso" required>
+                <!-- Opção informativa, desativada e pré-selecionada -->
+                    <option value="" selected disabled>Selecione um curso</option>
+
+                    <!-- Opções reais -->
+                    <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="eng">Engenharia da Computação</option>
+                    <option value="adm">Administração</option>
+
+                    <!-- Opção queo usuário não pode escolher-->
+                    <option value="fechado" disabled>Curso indisponível</option>
+                </select>
+
+                <!-- Campo de textarea -->
+                <p>Feedback</p>
+                <textarea name="mensagem" rows="5" cols="30">Digite o seu texto aqui</textarea> <br> <br>
+
+                <!-- Botão de envio -->
+                <input type="submit" value="Enviar">
+
+                <!-- Botão de limpeza -->
+                <input type="reset" value="Limpar">
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
